@@ -7,7 +7,7 @@ const TunnelScene: React.FC = () => {
   // If you need to group multiple objects, you can also use a group ref
   const sphereRef = useRef<Mesh>(null);
 
-  useFrame((state, delta) => {
+  useFrame((state) => {
     if (sphereRef.current) {
       // A simple "breathing" scale: oscillate between 0.9 and 1.1
       const time = state.clock.getElapsedTime();

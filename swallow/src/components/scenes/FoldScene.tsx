@@ -19,7 +19,7 @@ const FoldScene: React.FC = () => {
     return () => clearTimeout(timer);
   }, [setCurrentScene]);
 
-  useFrame((state, delta) => {
+  useFrame((state) => {
     // Breathing animation
     if (sphereRef.current) {
       const time = state.clock.getElapsedTime();

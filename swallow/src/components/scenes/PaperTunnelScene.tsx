@@ -194,7 +194,7 @@ const PaperTunnelScene: React.FC = () => {
   
     // Reset layers that are behind the camera
     if (groupRef.current) {
-      groupRef.current.children.forEach((child, i) => {
+      groupRef.current.children.forEach((child) => {
         const worldPos = child.getWorldPosition(new THREE.Vector3());
         if (worldPos.z > state.camera.position.z + 2) {
           child.position.z -= layers.length * 2.5;

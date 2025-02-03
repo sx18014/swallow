@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
+import React from 'react';
+import { Canvas } from '@react-three/fiber';
 import { Clouds, Cloud } from '@react-three/drei';
 import * as THREE from 'three';
 
